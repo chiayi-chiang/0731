@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "report">....</div>
+    <script>
+        //跟windows預約一個時間跟新資料
+        setInterval (
+            function(){
+                report.innerText = Date();
+            },2000/*每兩秒跟新一次*/
+        )
+
+        //一趟結束再預約下一次，再重來一次，更新重匯出，非遞迴
+        // function displayTime(){
+        //     report.innerText = Date();
+        //     setTimeout(displayTime, 1000);
+        // }
+        // displayTime();
+
+        // setTimeout(displayTime, 3000);
+        // report.innerText = "Processing...";
+
+    </script>
+</body>
+</html>

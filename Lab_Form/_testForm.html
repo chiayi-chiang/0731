@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Foorm method="post" action="http://localhost/echo.php">
+        
+        <!--check box1-->
+        <input id="username" typy = "test" name="myname">
+        <label for = "username">your name:</label>
+        <br>
+        <input id="autoLogin" type="checkbox"name="mycheck"><!--核取方塊-->
+        <label for="autoLogin">AutoLogin</label>
+        <!--check box2-->
+        <div class="form-group form-check">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox"> 記住我(下次自動登入)
+            </label>
+        </div>
+    
+        <br>
+        <!--*3 radio name need same like group，post city,"2"-->
+        <input  id="tp" type="radio"name="mycity" value="2"><!--圓點c-2-->
+        <label for="tp">Taipei</label>
+        <input  id="tc" type="radio"name="mycity" value="4"><!--圓點c-4-->
+        <label for="tc">Taichung</label>
+        <input  id="tn" type="radio"name="mycity" value="6"><!--圓點c-6-->
+        <label for="tn">Taina</label>
+        <br>
+        <!--地址下拉是選單-->
+        <select name="mycity" class="custom-select">
+            <option value="2" >Taipei</option>
+            <option value="4" >Taichung</option>
+            <option value="6" >Taina</option>
+        </select>
+        <!--post1-->
+        <input type="submit" value="ok">
+        <br>
+        <!--post2-->
+        <button type="button" 
+            id="loginButton" 
+            class="btn btn-outline-success">
+            <!--success-green/danger-red/secondary-灰-->
+            <!--嵌入型的標籤(css字型，子元素)-->
+            <i class="fa fa-check"></i> 登入
+        </button>
+        <button type="button" 
+                id="cancelButton" 
+                class="btn btn-outline-secondary">
+                <i class="fa fa-remove"></i> 取消
+        </button>
+    </Foorm>
+    
+</body>
+</html>
